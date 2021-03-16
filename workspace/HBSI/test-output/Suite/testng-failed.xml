@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="masterpack.masterdata">
+        <methods>
+          <include name="IEopen"/>
+          <include name="mealplancreation"/>
+          <include name="RoomTypeCreation"/>
+          <include name="taxcreate"/>
+          <include name="Propertylogin"/>
+          <include name="Inventoryset"/>
+          <include name="rateset"/>
+          <include name="UserLogin"/>
+          <include name="rateplancreation"/>
+        </methods>
+      </class> <!-- masterpack.masterdata -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

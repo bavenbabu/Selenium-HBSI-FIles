@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="8" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="251945" started-at="2021-03-16T09:38:21Z" finished-at="2021-03-16T09:42:33Z">
+    <groups>
+      <group name="regression">
+        <method signature="masterdata.IEopen()[pri:0, instance:masterpack.masterdata@4bec1f0c]" name="IEopen" class="masterpack.masterdata"/>
+        <method signature="masterdata.Inventoryset()[pri:5, instance:masterpack.masterdata@4bec1f0c]" name="Inventoryset" class="masterpack.masterdata"/>
+        <method signature="masterdata.RoomTypeCreation()[pri:4, instance:masterpack.masterdata@4bec1f0c]" name="RoomTypeCreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.mealplancreation()[pri:1, instance:masterpack.masterdata@4bec1f0c]" name="mealplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.occupancypolicyset()[pri:7, instance:masterpack.masterdata@4bec1f0c]" name="occupancypolicyset" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateplancreation()[pri:3, instance:masterpack.masterdata@4bec1f0c]" name="rateplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateset()[pri:6, instance:masterpack.masterdata@4bec1f0c]" name="rateset" class="masterpack.masterdata"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="masterdata.IEopen()[pri:0, instance:masterpack.masterdata@4bec1f0c]" name="IEopen" class="masterpack.masterdata"/>
+        <method signature="masterdata.Inventoryset()[pri:5, instance:masterpack.masterdata@4bec1f0c]" name="Inventoryset" class="masterpack.masterdata"/>
+        <method signature="masterdata.RoomTypeCreation()[pri:4, instance:masterpack.masterdata@4bec1f0c]" name="RoomTypeCreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.mealplancreation()[pri:1, instance:masterpack.masterdata@4bec1f0c]" name="mealplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateplancreation()[pri:3, instance:masterpack.masterdata@4bec1f0c]" name="rateplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateset()[pri:6, instance:masterpack.masterdata@4bec1f0c]" name="rateset" class="masterpack.masterdata"/>
+        <method signature="masterdata.taxcreate()[pri:2, instance:masterpack.masterdata@4bec1f0c]" name="taxcreate" class="masterpack.masterdata"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Default test" duration-ms="251945" started-at="2021-03-16T09:38:21Z" finished-at="2021-03-16T09:42:33Z">
+      <class name="masterpack.masterdata">
+        <test-method status="PASS" signature="IEopen()[pri:0, instance:masterpack.masterdata@4bec1f0c]" name="IEopen" duration-ms="50471" started-at="2021-03-16T15:08:21Z" finished-at="2021-03-16T15:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IEopen -->
+        <test-method status="PASS" signature="mealplancreation()[pri:1, instance:masterpack.masterdata@4bec1f0c]" name="mealplancreation" duration-ms="16447" started-at="2021-03-16T15:09:12Z" finished-at="2021-03-16T15:09:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mealplancreation -->
+        <test-method status="PASS" signature="taxcreate()[pri:2, instance:masterpack.masterdata@4bec1f0c]" name="taxcreate" duration-ms="20131" started-at="2021-03-16T15:09:28Z" finished-at="2021-03-16T15:09:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taxcreate -->
+        <test-method status="FAIL" signature="rateplancreation()[pri:3, instance:masterpack.masterdata@4bec1f0c]" name="rateplancreation" duration-ms="8656" started-at="2021-03-16T15:09:48Z" finished-at="2021-03-16T15:09:57Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == *[name='GOLD$_Action(New)']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:43977/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd6f901d-a585-489f-a602-2090f394f18c
+*** Element info: {Using=name, value=GOLD$_Action(New)}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == *[name='GOLD$_Action(New)']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:43977/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd6f901d-a585-489f-a602-2090f394f18c
+*** Element info: {Using=name, value=GOLD$_Action(New)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.rateplan(loginproperty.java:200)
+	at masterpack.masterdata.rateplancreation(masterdata.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rateplancreation -->
+        <test-method status="FAIL" signature="RoomTypeCreation()[pri:4, instance:masterpack.masterdata@4bec1f0c]" name="RoomTypeCreation" duration-ms="13508" started-at="2021-03-16T15:09:57Z" finished-at="2021-03-16T15:10:11Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == *[name='GOLD$_Action(Refresh)']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:43977/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd6f901d-a585-489f-a602-2090f394f18c
+*** Element info: {Using=name, value=GOLD$_Action(Refresh)}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == *[name='GOLD$_Action(Refresh)']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:43977/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fd6f901d-a585-489f-a602-2090f394f18c
+*** Element info: {Using=name, value=GOLD$_Action(Refresh)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.roomcreate(loginproperty.java:317)
+	at masterpack.masterdata.RoomTypeCreation(masterdata.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RoomTypeCreation -->
+        <test-method status="PASS" signature="Inventoryset()[pri:5, instance:masterpack.masterdata@4bec1f0c]" name="Inventoryset" duration-ms="26974" started-at="2021-03-16T15:10:11Z" finished-at="2021-03-16T15:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inventoryset -->
+        <test-method status="PASS" signature="rateset()[pri:6, instance:masterpack.masterdata@4bec1f0c]" name="rateset" duration-ms="42130" started-at="2021-03-16T15:10:38Z" finished-at="2021-03-16T15:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rateset -->
+        <test-method status="PASS" signature="occupancypolicyset()[pri:7, instance:masterpack.masterdata@4bec1f0c]" name="occupancypolicyset" duration-ms="73469" started-at="2021-03-16T15:11:20Z" finished-at="2021-03-16T15:12:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- occupancypolicyset -->
+      </class> <!-- masterpack.masterdata -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
