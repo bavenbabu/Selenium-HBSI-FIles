@@ -67,6 +67,7 @@ public class loginproperty {
 		driver.findElement(Act_no).sendKeys(prop.getProperty("uatAcct"));
 		driver.findElement(username).sendKeys(prop.getProperty("uatuser"));
 		driver.findElement(password).sendKeys(prop.getProperty("uatpass"));
+		//driver.findElement(password).sendKeys(prop.getProperty("hotpass"));
 
 		driver.findElement(button).click();
 		//Thread.sleep(1000);

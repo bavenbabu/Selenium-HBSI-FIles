@@ -26,6 +26,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import masterdatas.loginproperty;
+
 public class Exceltest {
 
 	WebDriver driver;
@@ -52,6 +54,14 @@ public class Exceltest {
 		driver.get(prop.getProperty("hotbrow"));
 		//driver.get("https://hotfix.hbsconnect.com");
 		driver.manage().window().maximize();
+		
+		loginproperty login=new loginproperty(driver);
+		
+		login.m_login();
+		login.pptylogin();
+		
+		/*
+		
 		driver.findElement(By.name("GOLD$_AccountNbr_Input")).clear();
 		driver.findElement(By.name("GOLD$_Username_Input")).clear();
 		driver.findElement(By.name("GOLD$_Password_Input")).clear();
@@ -67,7 +77,7 @@ public class Exceltest {
 		driver.findElement(By.name("GOLD$_Action(Login)")).click();
 		System.out.println("Successfully loginned");
 		
-
+*/
 
 
 

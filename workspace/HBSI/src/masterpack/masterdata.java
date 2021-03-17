@@ -41,7 +41,7 @@ public class masterdata {
 	String date = LocalDate.now().plusDays(2).format(DateTimeFormatter.ofPattern( "yyyy-MM-dd" ));
 
 
-	
+
 
 	@Test(priority=0,groups= {"sanity","regression"})	
 	public void IEopen() throws Exception{
