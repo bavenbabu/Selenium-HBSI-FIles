@@ -55,12 +55,6 @@ public class Exceltest {
 		//driver.get("https://hotfix.hbsconnect.com");
 		driver.manage().window().maximize();
 		
-		loginproperty login=new loginproperty(driver);
-		
-		login.m_login();
-		login.pptylogin();
-		
-		/*
 		
 		driver.findElement(By.name("GOLD$_AccountNbr_Input")).clear();
 		driver.findElement(By.name("GOLD$_Username_Input")).clear();
@@ -76,11 +70,7 @@ public class Exceltest {
 		driver.findElement(By.name("GOLD$_Password_Input")).sendKeys(prop1.getProperty("hotpass"));
 		driver.findElement(By.name("GOLD$_Action(Login)")).click();
 		System.out.println("Successfully loginned");
-		
-*/
-
-
-
+	
 	}
 
 
@@ -194,7 +184,8 @@ public class Exceltest {
 */
 				
 				JavascriptExecutor js = (JavascriptExecutor) driver;
-				js.executeScript("window.scrollTo(0, document.body.scrollHeight)");  
+				js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			
 				String log=driver.findElement(By.name("Log")).getText();
 				System.out.println("The Search response is: "+log);
 				String searchtext="RatePlanCode" ;

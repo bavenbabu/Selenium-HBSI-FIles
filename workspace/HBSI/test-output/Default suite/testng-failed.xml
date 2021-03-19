@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="masterpack.masterdata">
+      <class name="checkexceltest.LoginTests">
         <methods>
-          <include name="RoomTypeCreation"/>
-          <include name="rateplancreation"/>
+          <include name="test" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="IEopen"/>
         </methods>
-      </class> <!-- masterpack.masterdata -->
+      </class> <!-- checkexceltest.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
