@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="checkexceltest.LoginTests">
+      <class name="masterpack.masterdata">
         <methods>
-          <include name="test" invocation-numbers="0 1 2 3 4 5 6"/>
-          <include name="IEopen"/>
+          <include name="mealplancreation"/>
+          <include name="RoomTypeCreation"/>
+          <include name="taxcreate"/>
+          <include name="Inventoryset"/>
+          <include name="rateset"/>
+          <include name="rateplancreation"/>
         </methods>
-      </class> <!-- checkexceltest.LoginTests -->
+      </class> <!-- masterpack.masterdata -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

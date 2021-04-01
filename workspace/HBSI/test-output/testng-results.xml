@@ -1,17 +1,435 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="249" started-at="2021-03-19T10:47:57Z" finished-at="2021-03-19T10:47:58Z">
+  <suite name="Suite" duration-ms="86256" started-at="2021-04-01T08:24:38Z" finished-at="2021-04-01T08:26:05Z">
     <groups>
+      <group name="regression">
+        <method signature="masterdata.IEopen()[pri:0, instance:masterpack.masterdata@5a8806ef]" name="IEopen" class="masterpack.masterdata"/>
+        <method signature="masterdata.Inventoryset()[pri:5, instance:masterpack.masterdata@5a8806ef]" name="Inventoryset" class="masterpack.masterdata"/>
+        <method signature="masterdata.RoomTypeCreation()[pri:4, instance:masterpack.masterdata@5a8806ef]" name="RoomTypeCreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.mealplancreation()[pri:1, instance:masterpack.masterdata@5a8806ef]" name="mealplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateplancreation()[pri:3, instance:masterpack.masterdata@5a8806ef]" name="rateplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateset()[pri:6, instance:masterpack.masterdata@5a8806ef]" name="rateset" class="masterpack.masterdata"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="masterdata.IEopen()[pri:0, instance:masterpack.masterdata@5a8806ef]" name="IEopen" class="masterpack.masterdata"/>
+        <method signature="masterdata.Inventoryset()[pri:5, instance:masterpack.masterdata@5a8806ef]" name="Inventoryset" class="masterpack.masterdata"/>
+        <method signature="masterdata.RoomTypeCreation()[pri:4, instance:masterpack.masterdata@5a8806ef]" name="RoomTypeCreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.mealplancreation()[pri:1, instance:masterpack.masterdata@5a8806ef]" name="mealplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateplancreation()[pri:3, instance:masterpack.masterdata@5a8806ef]" name="rateplancreation" class="masterpack.masterdata"/>
+        <method signature="masterdata.rateset()[pri:6, instance:masterpack.masterdata@5a8806ef]" name="rateset" class="masterpack.masterdata"/>
+        <method signature="masterdata.taxcreate()[pri:2, instance:masterpack.masterdata@5a8806ef]" name="taxcreate" class="masterpack.masterdata"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="249" started-at="2021-03-19T10:47:57Z" finished-at="2021-03-19T10:47:58Z">
-      <class name="log4j.demolog4j">
-        <test-method status="PASS" signature="test()[pri:0, instance:log4j.demolog4j@58a9760d]" name="test" duration-ms="150" started-at="2021-03-19T16:17:57Z" finished-at="2021-03-19T16:17:57Z">
+    <test name="Test" duration-ms="86256" started-at="2021-04-01T08:24:38Z" finished-at="2021-04-01T08:26:05Z">
+      <class name="masterpack.masterdata">
+        <test-method status="PASS" signature="IEopen()[pri:0, instance:masterpack.masterdata@5a8806ef]" name="IEopen" duration-ms="78604" started-at="2021-04-01T13:54:39Z" finished-at="2021-04-01T13:55:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- log4j.demolog4j -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- IEopen -->
+        <test-method status="FAIL" signature="mealplancreation()[pri:1, instance:masterpack.masterdata@5a8806ef]" name="mealplancreation" duration-ms="541" started-at="2021-04-01T13:55:58Z" finished-at="2021-04-01T13:55:58Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame found
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame found
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:872)
+	at masterdatas.loginproperty.meal_plan(loginproperty.java:129)
+	at masterpack.masterdata.mealplancreation(masterdata.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mealplancreation -->
+        <test-method status="FAIL" signature="taxcreate()[pri:2, instance:masterpack.masterdata@5a8806ef]" name="taxcreate" duration-ms="964" started-at="2021-04-01T13:55:58Z" finished-at="2021-04-01T13:55:59Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.tax_create(loginproperty.java:221)
+	at masterpack.masterdata.taxcreate(masterdata.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taxcreate -->
+        <test-method status="FAIL" signature="rateplancreation()[pri:3, instance:masterpack.masterdata@5a8806ef]" name="rateplancreation" duration-ms="1158" started-at="2021-04-01T13:55:59Z" finished-at="2021-04-01T13:56:00Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.rateplan(loginproperty.java:182)
+	at masterpack.masterdata.rateplancreation(masterdata.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rateplancreation -->
+        <test-method status="FAIL" signature="RoomTypeCreation()[pri:4, instance:masterpack.masterdata@5a8806ef]" name="RoomTypeCreation" duration-ms="822" started-at="2021-04-01T13:56:00Z" finished-at="2021-04-01T13:56:01Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.roomcreate(loginproperty.java:296)
+	at masterpack.masterdata.RoomTypeCreation(masterdata.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RoomTypeCreation -->
+        <test-method status="FAIL" signature="Inventoryset()[pri:5, instance:masterpack.masterdata@5a8806ef]" name="Inventoryset" duration-ms="1272" started-at="2021-04-01T13:56:01Z" finished-at="2021-04-01T13:56:02Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.Inv_Set(loginproperty.java:379)
+	at masterpack.masterdata.Inventoryset(masterdata.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inventoryset -->
+        <test-method status="FAIL" signature="rateset()[pri:6, instance:masterpack.masterdata@5a8806ef]" name="rateset" duration-ms="2375" started-at="2021-04-01T13:56:02Z" finished-at="2021-04-01T13:56:05Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #trigger
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-6ECKI4TL', ip: '192.168.0.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:11927/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b4598f40-6c01-42c0-bd07-698a79e517a0
+*** Element info: {Using=id, value=trigger}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at masterdatas.loginproperty.setrate(loginproperty.java:346)
+	at masterpack.masterdata.rateset(masterdata.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rateset -->
+      </class> <!-- masterpack.masterdata -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -10,14 +10,11 @@
     <classes>
       <class name="masterpack.masterdata">
         <methods>
-          <include name="IEopen"/>
           <include name="mealplancreation"/>
           <include name="RoomTypeCreation"/>
           <include name="taxcreate"/>
-          <include name="Propertylogin"/>
           <include name="Inventoryset"/>
           <include name="rateset"/>
-          <include name="UserLogin"/>
           <include name="rateplancreation"/>
         </methods>
       </class> <!-- masterpack.masterdata -->
